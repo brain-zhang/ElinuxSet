@@ -26,7 +26,7 @@ make VIMRUNTIMEDIR=/usr/share/vim/vim74
 sudo make install
 
 git clone https://github.com/memoryboxes/k-vim.git ~/k-vim
+sudo apt-get install cmake gcc g++ --force-yes
 sudo apt-get install ctags --force-yes
-sudo apt-get install CMake --force-yes
 cd ~/k-vim
 sh -x install.sh
