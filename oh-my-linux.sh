@@ -77,3 +77,15 @@ sudo apt-get install tmux --force-yes
 #==================================
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
 easy_install pip
+
+
+#==================================
+# on my tools
+#==================================
+sudo apt-get install htop --force-yes
+sudo apt-get install iotop --force-yes
+sudo apt-get install mtr --force-yes
+sudo apt-get install iptraf --force-yes
+sudo apt-get install multitail --force-yes
+sudo apt-get install nethack --force-yes
+curl http://beyondgrep.com/ack-2.12-single-file > /usr/bin/ack && chmod 0755 !#:3
