@@ -9,6 +9,9 @@ git config --global user.name "memorybox"
 git config --global user.email memoryboxes@gmail.com 
 # 全局的通过vim ~/.gitconfig来查看
 
+# 设置push
+git config --global push.default matching
+
 #git config user.name "Your Name"
 #git config user.email you@example.com
 #局部的通过当前路径下的 .git/config文件来查看
