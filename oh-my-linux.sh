@@ -51,3 +51,22 @@ mkdir -p ~/.git
 \cp -rf conf/gitignore_global ~/.git/gitignore_global
 git config --global core.excludesfile ~/.git/gitignore_global
 
+
+#==================================
+# on my zsh
+#==================================
+# 安装zsh
+sudo apt-get install zsh --force-yes
+#sudo echo /usr/local/bin/zsh >>/etc/shells
+sudo chsh -s /usr/bin/zsh
+
+# oh-my-zsh
+sudo apt-get install curl --force-yes
+sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+#==================================
+# on my tmux
+#==================================
+# 安装tmux
+sudo apt-get install tmux --froce-yes
+\cp -rf conf/tmux_conf ~/.tmux.conf
