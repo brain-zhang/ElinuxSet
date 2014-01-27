@@ -68,5 +68,12 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 # on my tmux
 #==================================
 # 安装tmux
-sudo apt-get install tmux --froce-yes
+sudo apt-get install tmux --force-yes
 \cp -rf conf/tmux_conf ~/.tmux.conf
+
+
+#==================================
+# on my python
+#==================================
+wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
+easy_install pip
