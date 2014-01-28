@@ -87,6 +87,20 @@ sudo apt-get update
 sudo sudo apt-get install subversion
 
 #==================================
+# on my nodejs
+#==================================
+sudo apt-get install python-software-properties python g++ make --force-yes
+sudo add-apt-repository ppa:chris-lea/node.js --force-yes
+sudo apt-get update --force-yes
+sudo apt-get install nodejs --force-yes
+
+curl -k https://npmjs.org/install.sh | sudo sh
+sudo npm install -g express
+sudo npm install -g yo
+sudo npm install -g bower
+sudo npm install -g grunt
+
+#==================================
 # on my tools
 #==================================
 sudo apt-get install htop --force-yes
@@ -96,3 +110,4 @@ sudo apt-get install iptraf --force-yes
 sudo apt-get install multitail --force-yes
 sudo apt-get install nethack --force-yes
 curl http://beyondgrep.com/ack-2.12-single-file > /usr/bin/ack && chmod 0755 !#:3
+
