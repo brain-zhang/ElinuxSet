@@ -78,6 +78,13 @@ sudo apt-get install tmux --force-yes
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
 easy_install pip
 
+#==================================
+# on my subversion
+#==================================
+sudo echo deb http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
+sudo echo deb-src http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
+sudo apt-get update
+sudo sudo apt-get install subversion
 
 #==================================
 # on my tools
