@@ -76,7 +76,8 @@ sudo apt-get install tmux --force-yes
 # on my python
 #==================================
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
-easy_install pip
+sudo easy_install pip
+sudo apt-get install python-virtualenv
 
 #==================================
 # on my subversion
