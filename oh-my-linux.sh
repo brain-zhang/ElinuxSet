@@ -109,5 +109,6 @@ sudo apt-get install mtr --force-yes
 sudo apt-get install iptraf --force-yes
 sudo apt-get install multitail --force-yes
 sudo apt-get install nethack --force-yes
+sudo apt-get install tig --force-yes
 curl http://beyondgrep.com/ack-2.12-single-file > /usr/bin/ack && chmod 0755 !#:3
 
