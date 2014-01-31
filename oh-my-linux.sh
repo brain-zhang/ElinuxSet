@@ -102,6 +102,12 @@ sudo npm install -g bower
 sudo npm install -g grunt
 
 #==================================
+# on my mysql
+#==================================
+sudo apt-get install mysql-server mysql --force-yes
+\cp -rf conf/my.cnf /etc/mysql/
+
+#==================================
 # on my tools
 #==================================
 sudo apt-get install htop --force-yes
