@@ -106,6 +106,7 @@ sudo npm install -g grunt
 #==================================
 sudo apt-get install mysql-server --force-yes
 \cp -rf conf/my.cnf /etc/mysql/
+sudo apt-get install python-mysqldb
 
 #==================================
 # on my tools
