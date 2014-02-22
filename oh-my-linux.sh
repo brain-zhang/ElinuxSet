@@ -104,7 +104,7 @@ sudo npm install -g grunt
 #==================================
 # on my mysql
 #==================================
-sudo apt-get install mysql-server mysql --force-yes
+sudo apt-get install mysql-server --force-yes
 \cp -rf conf/my.cnf /etc/mysql/
 
 #==================================
@@ -117,5 +117,5 @@ sudo apt-get install iptraf --force-yes
 sudo apt-get install multitail --force-yes
 sudo apt-get install nethack --force-yes
 sudo apt-get install tig --force-yes
-curl http://beyondgrep.com/ack-2.12-single-file > /usr/bin/ack && chmod 0755 !#:3
+sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 !#:3
 
