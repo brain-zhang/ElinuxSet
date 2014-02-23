@@ -119,5 +119,6 @@ sudo apt-get install iptraf --force-yes
 sudo apt-get install multitail --force-yes
 sudo apt-get install nethack --force-yes
 sudo apt-get install tig --force-yes
+sudo apt-get install daemon --force-yes
 sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 !#:3
 
