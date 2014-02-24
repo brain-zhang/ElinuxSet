@@ -70,6 +70,7 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 # 安装tmux
 sudo apt-get install tmux --force-yes
 \cp -rf conf/tmux_conf ~/.tmux.conf
+echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.bashrc
 
 
 #==================================
