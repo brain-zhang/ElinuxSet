@@ -56,7 +56,7 @@ git config --global core.excludesfile ~/.git/gitignore_global
 # on my zsh
 #==================================
 # 安装zsh
-sudo apt-get install zsh --force-yes
+sudo apt-get -y install zsh
 #sudo echo /usr/local/bin/zsh >>/etc/shells
 sudo chsh -s /usr/bin/zsh
 
@@ -68,7 +68,7 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 # on my tmux
 #==================================
 # 安装tmux
-sudo apt-get install tmux --force-yes
+sudo apt-get -y install tmux
 \cp -rf conf/tmux_conf ~/.tmux.conf
 echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.bashrc
 
@@ -78,7 +78,7 @@ echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.bashrc
 #==================================
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
 sudo easy_install pip
-sudo apt-get install python-virtualenv
+sudo apt-get install -y python-virtualenv
 
 #==================================
 # on my subversion
@@ -86,15 +86,15 @@ sudo apt-get install python-virtualenv
 sudo echo deb http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
 sudo echo deb-src http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
 sudo apt-get update
-sudo sudo apt-get install subversion
+sudo sudo apt-get -y install subversion
 
 #==================================
 # on my nodejs
 #==================================
-sudo apt-get install python-software-properties python g++ make --force-yes
+sudo apt-get -y install python-software-properties python g++ make
 sudo add-apt-repository ppa:chris-lea/node.js --force-yes
 sudo apt-get update --force-yes
-sudo apt-get install nodejs --force-yes
+sudo apt-get -y install nodejs
 
 curl -k https://npmjs.org/install.sh | sudo sh
 sudo npm install -g express
@@ -105,10 +105,10 @@ sudo npm install -g grunt
 #==================================
 # on my mysql
 #==================================
-sudo apt-get install mysql-server --force-yes
+sudo apt-get -y install mysql-server
 \cp -rf conf/my.cnf /etc/mysql/
-sudo apt-get install libmysqlclient-dev
-sudo apt-get install python-mysqldb
+sudo apt-get -y install libmysqlclient-dev
+sudo apt-get -y install python-mysqldb
 
 #==================================
 # on my tools
