@@ -5,6 +5,7 @@
 # on my git
 #==================================
 # 设置用户名密码
+apt-get -y install git
 git config --global user.name "memorybox"
 git config --global user.email memoryboxes@gmail.com 
 # 全局的通过vim ~/.gitconfig来查看
