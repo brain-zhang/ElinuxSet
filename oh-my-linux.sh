@@ -7,7 +7,7 @@
 # 设置用户名密码
 apt-get -y install git
 git config --global user.name "memorybox"
-git config --global user.email memoryboxes@gmail.com 
+git config --global user.email memoryboxes@gmail.com
 # 全局的通过vim ~/.gitconfig来查看
 
 # 设置push
@@ -21,7 +21,7 @@ git config --global push.default matching
 #git commit --amend --author='Your Name <you@example.com>'
 
 # 设置颜色
-git config color.ui true 
+git config color.ui true
 git config --global color.status auto
 git config --global color.diff auto
 git config --global color.branch auto
