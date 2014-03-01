@@ -117,13 +117,13 @@ sudo apt-get -y install python-mysqldb
 #==================================
 # on my tools
 #==================================
-sudo apt-get install htop --force-yes
-sudo apt-get install iotop --force-yes
-sudo apt-get install mtr --force-yes
-sudo apt-get install iptraf --force-yes
-sudo apt-get install multitail --force-yes
-sudo apt-get install nethack --force-yes
-sudo apt-get install tig --force-yes
-sudo apt-get install daemon --force-yes
-sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 !#:3
+sudo apt-get -y install htop
+sudo apt-get -y install iotop
+sudo apt-get -y install mtr
+sudo apt-get -y install iptraf
+sudo apt-get -y install multitail
+sudo apt-get -y install nethack
+sudo apt-get -y install tig
+sudo apt-get -y install daemon
+sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 /usr/local/bin/ack
 
