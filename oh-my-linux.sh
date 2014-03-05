@@ -100,7 +100,7 @@ sudo add-apt-repository ppa:chris-lea/node.js --force-yes
 sudo apt-get update --force-yes
 sudo apt-get -y install nodejs
 
-curl -k https://npmjs.org/install.sh | sudo sh
+curl -k -L https://npmjs.org/install.sh | sudo sh
 sudo npm install -g express
 sudo npm install -g yo
 sudo npm install -g bower
