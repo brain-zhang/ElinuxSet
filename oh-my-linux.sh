@@ -105,6 +105,7 @@ sudo npm install -g express
 sudo npm install -g yo
 sudo npm install -g bower
 sudo npm install -g grunt
+sudo npm install -g tldr
 
 #==================================
 # on my mysql
@@ -126,4 +127,5 @@ sudo apt-get -y install nethack
 sudo apt-get -y install tig
 sudo apt-get -y install daemon
 sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 /usr/local/bin/ack
+pip install --upgrade cdiff
 
