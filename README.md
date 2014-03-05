@@ -3,22 +3,17 @@ ElinuxSet
 
 My Linux config shell scripts
 
-    [include]
+oh-my-linux.sh  for ubuntu12
+oh-my-vim.sh    for vim74
 
-        git
-
-        subversion
-
-        zsh
-
-        tmux
-
-        nodejs
-
-        vim
-
-        mysql
-
-        something interesting others
+## include
+    * git
+    * subversion
+    * zsh
+    * tmux
+    * nodejs
+    * vim
+    * mysql
+    * something interesting others
 
 
