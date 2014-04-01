@@ -1,5 +1,6 @@
 #~/bin/bash
 
+SCRIPTPATH=`dirname "$0"`
 
 #==================================
 # on my git
@@ -49,7 +50,7 @@ git config --global alias.visual "!gitk"
 
 # 设置ignore
 mkdir -p ~/.git
-\cp -rf conf/gitignore_global ~/.git/gitignore_global
+\cp -rf $SCRIPTPATH/../conf/gitignore_global ~/.git/gitignore_global
 git config --global core.excludesfile ~/.git/gitignore_global
 
 
@@ -70,7 +71,7 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 #==================================
 # 安装tmux
 sudo apt-get -y install tmux
-\cp -rf conf/tmux_conf ~/.tmux.conf
+\cp -rf $SCRIPTPATH/../conf/tmux_conf ~/.tmux.conf
 echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 
 
@@ -112,7 +113,7 @@ sudo npm install -g jshint
 # on my mysql
 #==================================
 sudo apt-get -y install mysql-server
-\cp -rf conf/my.cnf /etc/mysql/
+\cp -rf $SCRIPTPATH/../conf/my.cnf /etc/mysql/
 sudo apt-get -y install libmysqlclient-dev
 sudo apt-get -y install python-mysqldb
 
