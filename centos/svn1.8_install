@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# WANdisco Subversion Installer V0.1
+# opensource@wandisco.com
+ 
 echo WANdisco Subversion Installer v0.1 for Redhat Enterprise Linux 5
 echo Please report bugs or feature suggestions to opensource@wandisco.com
 echo 

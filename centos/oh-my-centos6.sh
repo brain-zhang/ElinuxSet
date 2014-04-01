@@ -73,7 +73,7 @@ sudo curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.
 # on my tmux
 #==================================
 # 安装tmux
-sudo apt-get -y install tmux
+sudo yum -y install tmux
 \cp -rf $SCRIPTPATH/../conf/tmux_conf ~/.tmux.conf
 echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 
@@ -83,26 +83,43 @@ echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 #==================================
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python2.7
 sudo easy_install pip
-sudo apt-get install -y python-virtualenv
+pip install python-virtualenv
 mkidr -p ~/.pip
 echo '[global]' >> ~/.pip/pip.conf
 echo 'index-url = http://pypi.douban.com/simple' >> ~/.pip/pip.conf
 
-#==================================
-# on my subversion
-#==================================
-sudo echo deb http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
-sudo echo deb-src http://ppa.launchpad.net/svn/ppa/ubuntu precise main >>/etc/apt/sources.list
-sudo apt-get update
-sudo sudo apt-get -y install subversion
 
 #==================================
 # on my nodejs
 #==================================
-sudo apt-get -y install python-software-properties python g++ make
-sudo add-apt-repository ppa:chris-lea/node.js --force-yes
-sudo apt-get update --force-yes
-sudo apt-get -y install nodejs
+JSURL=http://nodejs.org/dist/node-latest.tar.gz
+echo 'We are going to install NodeJS for you... '
+echo 'lets download nodejs..'
+rm -r -f /usr/local/src
+mkdir -p /usr/local/src
+cd /usr/local/src
+
+wget $JSURL
+tar -zxvf ./node-latest.tar.gz
+
+echo 'Files extracted....'
+
+cd node-v*
+
+yum install -y openssl-devel gcc-c++ make git
+
+echo 'Configuring and installing NodeJS'
+
+./configure
+make
+make install
+
+echo 'welllllll....... that should be it.... hopefully :)'
+
+clear
+
+echo "Node is now installed @ version:"
+node --version
 
 curl -k -L https://npmjs.org/install.sh | sudo sh
 sudo npm install -g express
