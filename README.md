@@ -3,8 +3,10 @@ ElinuxSet
 
 My Linux config shell scripts
 
-oh-my-linux.sh  for ubuntu12
-oh-my-vim.sh    for vim74
+ubuntu/oh-my-linux.sh       for ubuntu12
+ubuntu/oh-my-vim.sh         for vim74
+
+centos/oh-my-centos6.sh     for centos6
 
 ## include
     * git
