@@ -31,6 +31,8 @@ git config --global color.interactive auto
 # 编辑器
 git config --global core.editor vim
 
+# 缓存密码
+git config --global credential.helper cache
 
 # 缩写
 git config --global alias.co checkout
