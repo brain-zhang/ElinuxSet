@@ -89,6 +89,7 @@ echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 #==================================
 # on my python, add python27
 #==================================
+sudo yum -y install python27-devel.x86_64
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python2.7
 sudo easy_install pip
 pip install python-virtualenv
@@ -130,7 +131,7 @@ echo "Node is now installed @ version:"
 node --version
 
 #curl -k -L https://npmjs.org/install.sh | sudo sh
-sudo yum -y install npm.nora
+sudo yum -y install npm.noarch
 sudo npm install -g express
 sudo npm install -g yo
 sudo npm install -g bower
@@ -141,6 +142,7 @@ sudo npm install -g jshint
 #==================================
 # on my tools
 #==================================
+sudo yum -y install install subversion.x86_64 --skip-broken
 sudo yum -y install htop
 sudo yum -y install iotop
 sudo yum -y install mtr
