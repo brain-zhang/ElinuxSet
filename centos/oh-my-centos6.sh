@@ -3,6 +3,14 @@
 SCRIPTPATH=`dirname "$0"`
 
 #==================================
+# 加epel源
+#==================================
+wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
+rm -rf remi-release-6*.rpm epel-release-6*.rpm
+
+#==================================
 # on my git
 #==================================
 # 设置用户名密码
@@ -84,7 +92,7 @@ echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python2.7
 sudo easy_install pip
 pip install python-virtualenv
-mkidr -p ~/.pip
+mkdir -p ~/.pip
 echo '[global]' >> ~/.pip/pip.conf
 echo 'index-url = http://pypi.douban.com/simple' >> ~/.pip/pip.conf
 
@@ -121,7 +129,8 @@ clear
 echo "Node is now installed @ version:"
 node --version
 
-curl -k -L https://npmjs.org/install.sh | sudo sh
+#curl -k -L https://npmjs.org/install.sh | sudo sh
+sudo yum -y install npm.nora
 sudo npm install -g express
 sudo npm install -g yo
 sudo npm install -g bower

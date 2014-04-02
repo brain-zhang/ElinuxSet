@@ -83,7 +83,7 @@ echo alias tmux="TERM=screen-256color-bce tmux" >> ~/.zshrc
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
 sudo easy_install pip
 sudo apt-get install -y python-virtualenv
-mkidr -p ~/.pip
+mkdir -p ~/.pip
 echo '[global]' >> ~/.pip/pip.conf
 echo 'index-url = http://pypi.douban.com/simple' >> ~/.pip/pip.conf
 
