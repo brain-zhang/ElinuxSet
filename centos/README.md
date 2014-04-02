@@ -24,9 +24,6 @@ Execute the following commands at your servers command-line:
 
 	$ sh centos_lemp.sh
 
-###svn1.8
-
-	$ sh svn1.8_install.sh
 
 ###Centos6 setup
 
