@@ -133,3 +133,9 @@ sudo apt-get -y install daemon
 sudo curl http://beyondgrep.com/ack-2.12-single-file > /usr/local/bin/ack && chmod 0755 /usr/local/bin/ack
 pip install --upgrade cdiff
 
+wget https://github.com/downloads/joelthelion/autojump/autojump_v21.1.2.tar.gz
+tar zxvf autojump_v21.1.2.tar.gz
+cd autojump_v21.1.2 && sudo ./install.sh
+cd ..
+rm -rf autojump*
+echo "[[ -s /etc/profile.d/autojump.sh ]] && . /etc/profile.d/autojump.sh" >> ~/.zshrc
