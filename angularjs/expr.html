@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html ng-app = "myApp">
+    <head>
+        <title>Simple app</title>
+        <script src="http://ajax.useso.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+    </head>
+
+    <body>
+        <div ng-controller="MyParseController">
+            <input ng-model="expr" type="text" placeholder="Enter an expression">
+            <h2>{{ parsedValue }}</h2>
+        </div>
+
+        <div ng-controller="MyInterpolateController">
+            <input ng-model="to" type="email" placeholder="Recipient" />
+            <textarea ng-model="emailbody"></textarea>
+            <pre>{{ previewText }}</pre>
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+        var app = angular.module("myApp", []);
+        app.controller("MyParseController",
+                function($scope, $parse){
+                    $scope.$watch("expr", function(newVal, oldVal, scope) {
+                        if (newVal !== oldVal) {
+                            var parseFun = $parse(newVal);
+
+                            $scope.parsedValue = parseFun(scope);
+                        }
+                    });
+            }
+        );
+
+        app.controller("MyInterpolateController",
+                function($scope, $interpolate){
+                    $scope.to = "memoryboxes@github.io"
+                    $scope.emailbody = "Hello {{ to }}, \n\nMy name is ari";
+
+                    $scope.$watch("emailbody", function(body) {
+                        if (body) {
+                            var template = $interpolate(body);
+                            $scope.previewText = template({to:$scope.to});
+                        }
+                    });
+                }
+            );
+    </script>
+
+</html>

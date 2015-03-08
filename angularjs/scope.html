@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html ng-app = "myApp">
+    <head>
+        <title>Simple app</title>
+        <script src="http://ajax.useso.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+    </head>
+
+    <body>
+        <div ng-controller="MyController">
+            <h1> hello {{ name }} </h1>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        angular.module("myApp", []).controller("MyController",
+                function($scope){
+                    $scope.name = "world";
+                }
+            );
+    </script>
+
+</html>
