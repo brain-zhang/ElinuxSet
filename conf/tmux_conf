@@ -13,7 +13,7 @@ set-option -g repeat-time 1000                    # 控制台激活后的持续�
 set-window-option -g display-panes-time 1500
 set-option -g repeat-time 0                       # Allow the arrow key to be used immediately after changing windows
 
-set-option -g renumber-windows on                 # window 0, 1, 2, remove 1, renumber to 0, 1
+#set-option -g renumber-windows on                 # window 0, 1, 2, remove 1, renumber to 0, 1
 
 # Set window notifications
 setw -g monitor-activity on
@@ -36,9 +36,9 @@ bind -r ) switch-client -n
 # -------------------------------- session end --------------------------------
 
 # -------------------------------- window begin --------------------------------
-set-option -g base-index 1                        #窗口的初始序号；默认为0，这里设置为1
+#set-option -g base-index 1                        #窗口的初始序号；默认为0，这里设置为1
 
-set-window-option -g pane-base-index 1            # panes index start at 1, setw means set-window-option
+#set-window-option -g pane-base-index 1            # panes index start at 1, setw means set-window-option
 set-window-option -g other-pane-height 25
 set-window-option -g other-pane-width 80
 
@@ -130,18 +130,18 @@ set -gq mouse-select-window on
 # set-option -g status-bg black
 # set-option -g status-fg white
 
-set -g status-bg '#4e4e4e'
-set -g status-fg '#bbbbbb'
-set -g status-left-fg '#bbbbbb'
-set -g status-left-bg '#4e4e4e'
-set -g status-right-fg '#bbbbbb'
-set -g status-right-bg '#4e4e4e'
-
-set -g status-left-length 90
-set -g status-right-length 60
+#set -g status-bg '#4e4e4e'
+#set -g status-fg '#bbbbbb'
+#set -g status-left-fg '#bbbbbb'
+#set -g status-left-bg '#4e4e4e'
+#set -g status-right-fg '#bbbbbb'
+#set -g status-right-bg '#4e4e4e'
+#
+#set -g status-left-length 90
+#set -g status-right-length 60
 
 # 对齐方式
-set-option -g status-justify centre
+#set-option -g status-justify centre
 
 # 左下角
 # set-option -g status-left '#[bg=black,fg=green][#[fg=cyan]#S#[fg=green]]'
@@ -162,8 +162,8 @@ set -g status-right '#[fg=green][#[fg=white]%m-%d %H:%M#[fg=green]]'
 # -------------------------------- color begin --------------------------------
 
 # pane border colors
-set-option -g pane-active-border-fg '#55ff55'
-set-option -g pane-border-fg '#555555'
+#set-option -g pane-active-border-fg '#55ff55'
+#set-option -g pane-border-fg '#555555'
 # set -g pane-border-fg colour245
 # set -g pane-active-border-fg colour39
 
