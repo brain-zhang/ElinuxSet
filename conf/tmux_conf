@@ -75,7 +75,7 @@ bind-key C-o rotate-window
 # 默认打开新窗口时跳转到当前路径
 bind c new-window -c "#{pane_current_path}"
 bind '"' split-window -c "#{pane_current_path}"
-bind % split-window -h -c "#{pane_current_path}""'"'
+bind % split-window -h -c "#{pane_current_path}"
 
 # 窗口间切换
 # [prefix-hjkl] pane之间移动
